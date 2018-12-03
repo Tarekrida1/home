@@ -1,21 +1,56 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- theme option   -->
+<div class="themes-menu background-dark">
+    <span class="color-light">Change Theme</span>
+    <div class="list">
+        <div id="theme-1" data-color="theme1">
+            <div></div>
+        </div>
+        <div id="theme-2" data-color="theme2">
+            <div></div>
+        </div>
+        <div id="theme-3" data-color="theme3">
+            <div></div>
+        </div>
+        <div id="theme-4" data-color="theme4">
+            <div></div>
+        </div>
+        <div id="theme-5" data-color="theme5">
+            <div></div>
+        </div>
 
+    </div>
+
+    <button class="theme-click" id="theme-click">
+                  <i class="i1 fa  fa-cog fa-spin"></i>
+                  <i class="i2 fas fa-times"></i>
+             
+                </button>
+    <div class="dw">
+        <div class="color-light" id="dark">Dark</div>
+        <div class="color-light" id="light">Light</div>
+    </div>
+</div>
+<!-- theme option   -->
+
+<!-- start nav -->
+<nav class="navbar custom-nav">
+    <div class="logo"><span id="brand" class="brand color1 font-italic">TaReK</span><span class="lan gradient" style="display: none;"><a href="ar/index.html">ع</a></span></div>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="click">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+    <div class="menu">
+        <a class="menu-item active" id="home" routerLink=''>home</a>
+        <a class="menu-item" id="moree" routerLink='/about'>About Me</a>
+        <a class="menu-item" id="Portfolio" routerLink='/portfolio'>Portfolio</a>
+        <a class="menu-item" id="Services" routerLink='/Services'>Services</a>
+        <a class="menu-item" id="Contact">Contact Me</a>
+    </div>
+    <div class="progress-page">
+        <div class="prog background1" id="myprog"></div>
+    </div>
+</nav>
+<!-- end nav -->
 <router-outlet></router-outlet>
